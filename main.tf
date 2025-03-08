@@ -1,8 +1,8 @@
 resource "aws_instance" "terraform-ec2" {
   ami           = var.instance_id
-  instance_type = var.type
+  instance_type = "r5.xlarge"
 
   tags = {
-    Name = "Terraform"
+    Name = "Terraform from sentinel"
   }
 }
